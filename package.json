@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/ryfer3592/storm-web/issues"
   },
-  "homepage": "https://github.com/ryfer3592/storm-web#readme"
+  "homepage": "https://github.com/ryfer3592/storm-web#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
 }
