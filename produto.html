@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <!-- Tudo que está dentro do head deverá ser carregado antes do conteúdo do body ser exibido -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Stom - Sistema de gerenciamento de produtos </title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="icon" type="imagem/png" href="Storm.png" /> <!-- Adicionar um icone a sua página -->
+    <title> Produtos - STORM </title>
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> <!-- Bootstrap com css -->
+    <link rel="icon" type="imagem/png" href="Storm.png" />
 </head>
-
 <body>
-    <!-- Conteúdo da página -->
     <nav class="navbar navbar-expanded-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="">
             Storm
@@ -30,7 +26,7 @@
                     <!-- da permissão do A ser um botão --> <!-- data toggle informa qual é o foco da página, o que será acionado -->
                     <div class="dropdown-menu bg-dark" arial-labelledby="submenu"> <!-- Fará os subprodutos da tabela cadastro -->
                         <a class="dropdown-item text-white bg-dark" href="produto.html"> Produtos </a>
-                        <a class="dropdown-item text-white" href="usuario.html"> Usuários </a> <!-- o text white deixa a fonte branca eo dropdown faz com que ele desça -->
+                        <a class="dropdown-item text-white bg-dark" href="usuario.html"> Usuários </a> <!-- o text white deixa a fonte branca eo dropdown faz com que ele desça -->
 
                     </div>
                 </li>
@@ -38,13 +34,19 @@
                 escrito em A -->
             </ul>
         </div>
-    </nav> <!-- O LG faz com que se expanda ou comprima dependente do tamanho da tela -->
+    </nav>
+    <div class="jumbotron"> <h2 class="display-4"> Cadastrar novo produto </h2>
+        <p class="lead"> Cadastre um novo produto para ser exibido na prateleira.</p> <!-- Textos lead são feitos para chamar atenção -->
+    </div> <!-- Sabe-se exatamente o objetivo do site, o display
+    é usado para modificar o H -->
+    <div class="container-fluid"> <!-- Não irá autocompletar -->
+        <form id="formProduto" autocomplete="off"> 
+            <div class="row"> 
+                <div class="col-md-6"> Blá</div>
+            </div>
+        </form>
+    </div>
 </body>
-
-<!--  Carrega mais rápido o site, porque só aparecerá os pacotes depois do site carregar-->
-<script src="node_modules/jquery/dist/jquery.min.js">  </script>
-<!-- Está importando o JQuery para o site, após carregar tudo que está no body -->
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js">  </script>
-<!-- Está importando o BootStrap para o site, após carregar tudo que está no body -->
-
+    <script src="node_modules/jquery/dist/jquery.min.js"> </script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"> </script>
 </html>
