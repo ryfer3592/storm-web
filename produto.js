@@ -11,8 +11,14 @@ window.onload = function () {
         event.preventDefault() // Para o funcionamento padrão de um código
         console.log("clicou") // Será feita uma mensagem toda vez que for clicado
         prepararBotao()
-        fetch("http://localhost:8080/storm-api/src/test.php").then(function(resposta){ // fetch está fazendo uma requisição que será mandada para o link
-            alert(resposta)
+        fetch("http://localhost:8080/storm-api/src/inserirproduto.php", {
+        method: "POST",
+        headers: {
+            "content-type": "x-www-form-urlencoded;charset=UTF-8" // começará a a aceitar acento
+        },
+        body: meuForm.serialize()
+    }).then(function(resposta){ // fetch está fazendo uma requisição que será mandada para o link    
+        alert(resposta)
         }) // Onde será mandada essa função
     }) // Ocorrendo submit no formulário, será feita uma função 
 
